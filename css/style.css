@@ -90,20 +90,19 @@ overflow-x: hidden;
  border-radius: 10%;
  background: #cf5a19;
 }
-/*.logo{
-	position: absolute;
-	border-radius: 50%;
-	display: flex;
 
-	justify-content: center;
-	align-items: center;
-	width: 20%;
-	margin-top: 6em;
-	background:#497e6a;
-	height: 10rem;
-	color:#fff;
-	border: solid 2px  #fff;
-}*/
-/*.logo p{
-font-size: calc(0.5em + 0.5vw);
-}*/
+.taps1{
+	display : none;
+	background: #f52f41;
+}
+
+.taps2{
+	display : none;
+	background-color: #293116;
+}
+.taps3{
+	display : none;
+}
+.taps4{
+	display : none;
+}
