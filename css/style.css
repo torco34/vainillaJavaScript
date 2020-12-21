@@ -201,7 +201,39 @@ justify-content: center;
 
 .fooder_contec{
 	width: 100%;
-	height: 10rem;
+	height: 20rem;
 	color:#fff;
 	background:  #370603;
+}
+
+/*.social_media{
+	display: flex;
+	justify-content: center;
+	color:#fff;
+}*/
+
+.social_media a{
+ text-decoration: none;
+ list-style: none;
+}
+
+.social_media a span {
+ color:#fff;
+ font-size: 5rem;
+ margin: 5px;
+ /*text-align: center;*/
+}
+
+.social_media{
+margin: 20px;
+}
+
+.fooder_contec {
+     display: grid;
+	 grid-template-columns: repeat(auto-fill, 100%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/*padding: 22px;*/
+	border:solid 1px red;
 }

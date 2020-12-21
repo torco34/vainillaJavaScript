@@ -12,7 +12,7 @@ if(ubicacion < desplaza ){
 	header.style.top = '0'
 	header.style.transition = "0.6s";
     header.style.top = "-120px"
-	console.log(desplaza)
+	// console.log(desplaza)
 
 }else {
 	
@@ -26,16 +26,13 @@ const inicio = document.getElementById('inicio')
 const menu = document.getElementById('menu')
 const sabores = document.getElementById('sabor')
 const ingresar = document.getElementById('ingresar')
-console.log(inicio)
-console.log(menu)
-console.log(sabores)
-console.log(ingresar )
 
+// las API del pestana
 const taps1 = document.getElementById('taps1')
 const taps2 = document.getElementById('taps2')
 const taps3 = document.getElementById('taps3')
 const taps4 = document.getElementById('taps4')
-console.log(taps2)
+
 
 
 const pesMenu = () =>{
@@ -66,14 +63,11 @@ menu.classList.remove('active')
 sabores.classList.remove('active')
 ingresar.classList.remove('active')
 inicio.classList.add('active')
-if(num){
 
-// quitarImg.style.display = 'none'	quitar la foto que me quede solo la pestana
-}
-
-// alert('hola')
 
 }
+
+
 
 const pesSabores = () =>{
 taps1.style.display = "none"
@@ -84,9 +78,10 @@ inicio.classList.remove('active')
 menu.classList.remove('active')
 ingresar.classList.remove('active')
 sabores.classList.add('active')
-// menu.classList.add('active')
-// console.log(link)
+
 } 
+
+
 const pesIgresar = () =>{
 taps1.style.display = "none"
 taps2.style.display = "none"
