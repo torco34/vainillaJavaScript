@@ -33,23 +33,38 @@ console.log(ingresar )
 
 const taps1 = document.getElementById('taps1')
 const taps2 = document.getElementById('taps2')
+const taps3 = document.getElementById('taps3')
+const taps4 = document.getElementById('taps4')
 console.log(taps2)
+
+
 const pesMenu = () =>{
-taps1.style.display = "block"
-taps2.style.display = "none"
+taps1.style.display = "none"
+taps2.style.display = "block"
+taps3.style.display = "none"
+taps4.style.display = "none"
 inicio.classList.remove('active')
+menu.classList.remove('active')
+inicio.classList.remove('active')
+sabores.classList.remove('active')
+ingresar.classList.remove('active')
 menu.classList.add('active')
-// let link = menu.classList.add('active')
-// console.log(link)
+
 } 
+
+
 
 
 const pesInicio = () => {
 let num = 3
 
-taps1.style.display = "none"
-taps2.style.display = "block"
+taps1.style.display = "block"
+taps2.style.display = "none"
+taps4.style.display = "none"
+taps3.style.display = "none"
 menu.classList.remove('active')
+sabores.classList.remove('active')
+ingresar.classList.remove('active')
 inicio.classList.add('active')
 if(num){
 
@@ -60,21 +75,33 @@ if(num){
 
 }
 
-const nose = () =>{
-	// refresh una  pagina y quedar en la misma pestana
-	// no se como pero si debuelvo la funcion con una condicional 
-	// creo que me funciona
-	// let link = pesMenu()
+const pesSabores = () =>{
+taps1.style.display = "none"
+taps2.style.display = "none"
+taps4.style.display = "none"
+taps3.style.display = "block"
+inicio.classList.remove('active')
+menu.classList.remove('active')
+ingresar.classList.remove('active')
+sabores.classList.add('active')
+// menu.classList.add('active')
+// console.log(link)
+} 
+const pesIgresar = () =>{
+taps1.style.display = "none"
+taps2.style.display = "none"
+taps3.style.display = "none"
+taps4.style.display = "block"
+inicio.classList.remove('active')
+menu.classList.remove('active')
+inicio.classList.remove('active')
+sabores.classList.remove('active')
+ingresar.classList.remove('active')
+ingresar.classList.add('active')
 
-	// return pesMenu()
-	
-	// console.log(link)
-}
-const debolve =() =>{
-	return pesInicio()
-	nose()
-}
-debolve()
-nose()
+} 
+
 menu.addEventListener('click', pesMenu)
 inicio.addEventListener('click', pesInicio)
+sabores.addEventListener('click', pesSabores)
+ingresar.addEventListener('click', pesIgresar)

@@ -10,43 +10,55 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header id="foto_header" class=" container header">
-	
-	<nav id="header">
-	<ul id="">
-		<li class="active" id="inicio">inicio</li>
-		<li id="menu" class=" card remover">Menu</li>
-		<li id="sabor" class="remover">Sabores</li>
-		<li id="ingresar" class="remover">Ingresa</li>
-	
-	</ul>
-	</nav>
+	<header id="foto_header" class=" container header">
+		<nav id="header">
+			<ul id="">
+				<li class="active" id="inicio">inicio</li>
+				<li id="menu" class=" card remover">Menu</li>
+				<li id="sabor" class="remover">Sabores</li>
+				<li id="ingresar" class="remover">Ingresa</li>
+			</ul>
+		</nav>
+	</header>
+<!-- donde va el buscador -->
+	<div class="buscardor" id="lupa">
+		<h2>
+			<input type="search">
+			<label for="">BUSCAR</label>
+		</h2>
+	</div>
 
-</header>
+	<section class="container">
+		<div class="caja_tap1 taps1" id="taps1">
 
-<div class="buscardor" id="lupa">
-	<h2>
+            <div class="tap1">
+				<a href="" class="cuadro_imagen1">
+					<figure class="img">
+						<img src="img/img.jpg" alt="">
+					</figure>
+				</a>
 
-		<input type="search">
-		<label for="">BUSCAR</label>
-	</h2>
-</div>
-
-<div class=" taps1" id="taps1">
-¿Cuál es la propiedad para agregar una sombra de fondo en CSS?<br><br>
-<p class="card">hola:</p>
-¿Cuál es la diferencia entre una clase y un ID de CSS?<br><br>
-¿Para qué nos ayudan las clases y IDs en CSS?<br><br>
-
-¿Cuál es la declaración correcta para colocar una imagen de fondo en CSS?<br><br>
-¿Cómo se le llama al conjunto de elementos que agregan estilos a etiquetas de HTML?<br>,<br>
-¿Cómo se le llama al patrón de elementos HTML, clases y IDs usado en CSS para agregar estilos?
-</div>
-</section>
+				<a href="" class="cuadro_imagen1">
+					<figure class="img">
+						<img src="img/p.jpg" alt="">
+					</figure>
+				</a>
 
 
-<section>
+				<a href="" class="cuadro_imagen1">
+					<h2>Escoje el ingrediente</h2>
+					<p>Arma tu pizza con los sabores tu escojas
+					y los precios que deseas</p>
+					<br> <br><br>
+					<button class="boton">Ver</button>
+				</a>
+			</div>
+			</div>
+		</section>
+
+<section class=" container " >
 	<div class="taps2" id="taps2">
+		<h1>tap 2</h1>
 		<h1>display</h1>
 	Display es la propiedad de css que indica cómo debe ser mostrado un elemento html. Todos los elementos tienen algún tipo de display. Si un elemento no se ve en pantalla es porque seguramente su display es none.
 
@@ -61,8 +73,9 @@ none: oculta el elemento.
 	</div>
 </section>
 
-<section>
+<section class="container ">
 	<div class="taps3" id="taps3">
+		<h1>tap 3 </h1>
 		<h1>Alineando elementos de forma horizontal</h1>
 
 
@@ -76,15 +89,36 @@ space-evenly: para distribuir los elementos con un espacio proporcional e igual 
 space-around: similar a space-evenly pero tanto en el primero como en el último elemento, el espacio hacia los extremos es la mitad del espacio usado entre los elementos.
 	</div>
 </section>
-	<section>
+	<section class="container">
 		<div class="taps4" id="taps4">
+			<h1>tap 4 </h1>
 			<h1>nose</h1>
 			<p>
 				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus minus harum illo maiores culpa iure odio eius dolore quasi amet quia excepturi dolor nemo officiis ea, sequi? Nulla, suscipit recusandae.
 			</p>
 		</div>
-	</section>
-
+	</section><br>
+		<footer id="contacto">
+		<div class="fooder_contec contenedor ">
+			<div class="conct_us">
+				<h2 class="brend">Toto Design</h2>
+				<p>Donde las redes sociales</p>
+			</div>
+			<div class="social_media">
+				<a href="./" class="social_media_icono">
+					<span class="icon-facebook-with-circle  social"></span>
+				</a>
+				<a href="./" class="social_media_icono">
+				
+               <span class="icon-twitter-with-circle"></span>
+				</a>
+				<a href="./" class="social_media_icono">
+					<span class="icon-instagram-with-circle"></span>
+				</a>
+			</div>
+		</div>
+		<div class="line"></div>
+	</footer>
 		<script src="js/main.js"></script> 
 </body>
 </html>
