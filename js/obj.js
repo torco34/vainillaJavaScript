@@ -18,9 +18,9 @@ const taps4 = document.getElementById('taps4')
      this.pestana()
      this.logNaber()
  	}
- 	pestana(e){
+ 	pestana(){
  		
- 			
+ 			// quitando el color de hover de cada lista
  			ingresar.classList.remove('active')
  			sabores.classList.remove('active')
  			menu.classList.remove('active')
@@ -36,33 +36,58 @@ const taps4 = document.getElementById('taps4')
  		    // colocando el evento a la lista
 
  		    const list =  event.target 
+
+ 		    // mover el pestana con el evento
+
  		    const bodyTaps = list.dataset.body;
-
+            // agrupar la pesta pa luego mostra
  		    const viewBody = document.querySelector(bodyTaps)
-            
+            // mostrando el cuerpo de cada pestana
+            // debugger
             viewBody.style.display = 'block'
-
-
- 		    // const remover = event.target.dataset.cuerpo
-
- 		    // const moveColour = list.parentNode
+            
+            
+            // mover el color de cada pestana segun este el evento
  		    list.classList.add('active')
- 		    console.log(list)
- 		     console.log(moveColour)
- 		    console.log(bodyTaps)
- 		     console.log(viewBody)
+ 	
  		
  		
  	}
  	logNaber(){
- 		window.addEventListener('click', (e)=>{
- 			// console.log(e.target)
- 		})
+    const quitar = document.querySelector('#foto_header')
+    
+    window.addEventListener('click', (e) =>{
+    	console.log(e.target)
+    	 if(true && e.target != header  ){
+         quitar.classList.add('nave')
 
- 	}	
+         return inicio
+
+    	 }
+    	 
+    })
+   
+   
+
+
+
+}
+
  	
  }
 header.addEventListener('click', () =>{
 	let mostrarPestana = new MostrarPestana()
 	// alert('hola')
 })
+
+// window.addEventListener('click', event =>{
+
+ 		// 	 const encabezado = document.querySelector('#foto_header')
+   //           if(encabezado.classList.toggle('nav') && event.target != encabezado){
+   //            encabezado.classList.toggle('header')
+   //           }
+ 	         
+ 	 //     console.log(encabezado.classList.toggle('nav'))
+ 	 //     // console.log(encabezado.classList.toggle('header'))
+ 			
+ 		// })
