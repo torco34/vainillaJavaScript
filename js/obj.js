@@ -12,13 +12,15 @@ const taps2 = document.getElementById('taps2')
 const taps3 = document.getElementById('taps3')
 const taps4 = document.getElementById('taps4')
  
-
+const partHeader = document.querySelector('#foto_header')
  class MostrarPestana{
  	constructor(){
-     this.pestana()
+     this.eyelash()
      this.logNaber()
+     this.changeHeader()
  	}
- 	pestana(){
+ 	
+eyelash(){
  		
  			// quitando el color de hover de cada lista
  			ingresar.classList.remove('active')
@@ -49,32 +51,64 @@ const taps4 = document.getElementById('taps4')
             
             // mover el color de cada pestana segun este el evento
  		    list.classList.add('active')
- 	
  		
  		
  	}
- 	logNaber(){
-    const quitar = document.querySelector('#foto_header')
-    
+logNaber(){
+	   // const partHeader = document.querySelector('#foto_header')
+	   let Location = window.pageYOffset;
     window.addEventListener('click', (e) =>{
-    	console.log(e.target)
-    	 if(true && e.target != header  ){
-         quitar.classList.add('nave')
+    //logrado no es el mejor reto cambiar el codigo luego
+    // mostrar una barra al darle click segun la pestana
+    	if(e.target === inicio ){
+    		partHeader.classList.add('header')
+    		partHeader.classList.remove('nave')
 
-         return inicio
+    	}else if(e.target === menu ){
+         partHeader.classList.add('nave')
+    	}else if(e.target === sabores ){
+    		partHeader.classList.add('nave')
+    	}else if(e.target === ingresar ){
+    		partHeader.classList.add('nave')
+    	}
+	
+})  
 
-    	 }
-    	 
-    })
-   
-   
+        
+    
+	 	
+	 } 
+// section the onscroll
+	 changeHeader(){
+	let Location = window.pageYOffset;
+	const nuevo = partHeader
+	console.log(nuevo)
+	 window.onscroll = ()=>{
+	 	let displace = window.pageYOffset
+        if(Location <displace ){
+         partHeader.classList.add('nave')
+         
+        }if(Location === 0){
+        	// partHeader.classList.remove('nave')
+        }
+	 	  
+	 	  
+	 	  	
+	 	  }
+        
+    
+	 	
+	 
 
+	 }
 
+ 
 
 }
 
- 	
- }
+
+
+
 header.addEventListener('click', () =>{
 	let mostrarPestana = new MostrarPestana()
 	// alert('hola')
