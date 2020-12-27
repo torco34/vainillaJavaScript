@@ -1,0 +1,111 @@
+/*las mediecuere*/
+@media screen and (max-width: 800px){
+	.header{
+	height: 20em;
+	
+
+	}
+
+	.header nav{
+		width: 80%;
+
+	}
+	.nave{
+		height: 4em;
+
+	}
+	.buscardor input{
+		 height: 25px;
+		 width: 40%;
+		 margin-top: 80px;
+		 font-size: calc(0.5em + 0.5vw)
+	}
+	.buscardor label{
+		height: 28px;
+		width: 40%;
+		padding: 5px;
+		font-size: calc(0.5em + 0.5vw)
+	}
+	/*.tap1 {
+		grid-template-columns: repeat(3, minmax(100px, 250px));
+		 grid-template-columns: repeat(auto-fill, 70%);
+	}*/
+	.cuadro_imagen1 h2{
+		font-size: calc(0.5em + 0.6vw);
+	}
+	.cuadro_imagen1 p{
+		font-size: calc(0.5em + 0.6vw);
+	}
+	.cuadro_imagen1 button{
+		font-size: calc(0.5em + 0.6vw);
+		top: -60px;
+		width: 11vw;
+	}
+	.cuadro_imagen1 img{
+		height: calc(10vw + 5rem);
+	}
+	.fooder_contec {
+     height: 50vh;
+     padding: 10px;
+     font-size: calc(0.5em + 0.6vw);
+	}
+}
+/*segunda medidas*/
+
+@media screen and (max-width: 500px){
+	.header{
+	height: 30em;
+	 font-size: calc(0.5em + 1vw);
+	
+
+	}
+
+	.header nav ul li{
+		margin:0.6em ;
+		height: 4vh;
+
+	}
+	.nave{
+		height: 4em;
+
+	}
+	.buscardor input{
+		
+		 margin-top: 60px;
+		 font-size: calc(0.5em + 0.5vw)
+	}
+	.buscardor label{
+		height: 15px;
+		font-size: calc(0.3em + 0.5vw)
+	}
+	.tap1 {
+		 grid-template-columns: repeat(auto-fill, 90%);
+
+	}
+	.cuadro_imagen1 h2{
+		font-size: calc(1em + 0.5vw);
+	}
+	.cuadro_imagen1 p{
+		font-size: calc(1em + 0.4vw);
+	}
+	.cuadro_imagen1 button{
+		font-size: calc(1em + 0.6vw);
+		height: 5vh;
+		width: 25vw;
+	}
+	.cuadro_imagen1 img{
+		height: 10rem;
+	}
+	.fooder_contec {
+     height: 100vh;
+
+    grid-template-columns: repeat(auto-fill, 90%);
+	}
+
+		.social_media a span {
+     font-size: calc(3em + 3vw);
+	}
+	.social_media{
+		text-align: center;
+	}
+}

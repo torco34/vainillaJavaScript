@@ -60,23 +60,26 @@ logNaber(){
     window.addEventListener('click', (e) =>{
     //logrado no es el mejor reto cambiar el codigo luego
     // mostrar una barra al darle click segun la pestana
-    	if(e.target === inicio ){
-    		partHeader.classList.add('header')
-    		partHeader.classList.remove('nave')
+    	if( e.target === menu || e.target === sabores || e.target === ingresar){
+    		partHeader.classList.add('nave')
+    		// partHeader.classList.remove('nave')
 
-    	}else if(e.target === menu ){
-         partHeader.classList.add('nave')
-    	}else if(e.target === sabores ){
-    		partHeader.classList.add('nave')
-    	}else if(e.target === ingresar ){
-    		partHeader.classList.add('nave')
+    	}else if(e.target === inicio){
+        partHeader.classList.add('header')
+    	partHeader.classList.remove('nave')
     	}
+    	
+    	
 	
 })  
 
         
     
-	 	
+	
+
+	
+
+	
 	 } 
 // section the onscroll
 	 changeHeader(){
