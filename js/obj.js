@@ -17,6 +17,7 @@ const partHeader = document.querySelector('#foto_header')
  	constructor(){
      this.eyelash()
      this.logNaber()
+     this.removeNaveWithScroll()
      
  	}
  	
@@ -55,7 +56,7 @@ eyelash(){
  		
  	}
 
-// section donde pone color ala barra y quita la foto header
+// section donde pone color a la barra y quita la foto header
 logNaber(){
 	   // const partHeader = document.querySelector('#foto_header')
 	
@@ -64,6 +65,7 @@ logNaber(){
     // mostrar una barra al darle click segun la pestana
     	if( e.target === menu || e.target === sabores || e.target === ingresar){
     		partHeader.classList.add('nave')
+            // header.style.display = 'block'
     		// partHeader.classList.remove('nave')
 
     	}else if(e.target === inicio){
@@ -72,6 +74,14 @@ logNaber(){
     	}
       })  
 	} 
+    removeNaveWithScroll(){
+     let Localizar = window.pageYOffset;
+     window.onscroll = () =>{
+         
+     //preguntar a Esteban el porque
+     // si deja asi no se esconde la section dela li en las pestana
+     }
+    }
  }
 
 
@@ -94,19 +104,18 @@ class EyelashTwo {
      // section the onscroll
      
     let Localizar = window.pageYOffset;
-    const nuevo = header
-    console.log(nuevo)
-     console.log( Localizar)
+    // const nuevo = header
+   
      window.onscroll = ()=>{
         let desplazar = window.pageYOffset
-        console.log( desplazar)
+      
         if(Localizar < desplazar  ){
 
         header.style.display = 'none'
         
         }else{
         
-        nuevo.style.display = 'block'
+       header.style.display = 'block'
        
         }
           
