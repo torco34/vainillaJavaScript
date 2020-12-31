@@ -17,7 +17,7 @@ const partHeader = document.querySelector('#foto_header')
  	constructor(){
      this.eyelash()
      this.logNaber()
-     this.changeHeader()
+     
  	}
  	
 eyelash(){
@@ -54,9 +54,11 @@ eyelash(){
  		
  		
  	}
+
+// section donde pone color ala barra y quita la foto header
 logNaber(){
 	   // const partHeader = document.querySelector('#foto_header')
-	   let Location = window.pageYOffset;
+	
     window.addEventListener('click', (e) =>{
     //logrado no es el mejor reto cambiar el codigo luego
     // mostrar una barra al darle click segun la pestana
@@ -68,54 +70,50 @@ logNaber(){
         partHeader.classList.add('header')
     	partHeader.classList.remove('nave')
     	}
-    	
-    	
-	
-})  
-
-        
-    
-	
-
-	
-
-	
-	 } 
-// section the onscroll
-	 changeHeader(){
-	let Location = window.pageYOffset;
-	const nuevo = partHeader
-	console.log(nuevo)
-	 window.onscroll = ()=>{
-	 	let displace = window.pageYOffset
-        if(Location <displace ){
-         partHeader.classList.add('nave')
-         
-        }if(Location === 0){
-        	// partHeader.classList.remove('nave')
-        }
-	 	  
-	 	  
-	 	  	
-	 	  }
-        
-    
-	 	
-	 
-
-	 }
-
- 
-
-}
+      })  
+	} 
+ }
 
 
 
 
 header.addEventListener('click', () =>{
 	let mostrarPestana = new MostrarPestana()
-	// alert('hola')
+	
 })
+
+
+// section de la pestana de menu y la parra de navegacion
+
+class EyelashTwo {
+    // agrgar color a la barra
+    constructor(){
+        this.addColour()
+    }
+    addColour(){
+     // section the onscroll
+     
+    let Location = window.pageYOffset;
+    const nuevo = partHeader
+    console.log(nuevo)
+     window.onscroll = ()=>{
+        let displace = window.pageYOffset
+        if(Location < displace ){
+         nuevo.classList.add('nave')
+         console.log(`ensayo ${displace}`)
+        }if(Location === 0){
+            nuevo.classList.add('nave')
+            console.log(`ensayo2 ${location}`)
+        }
+          
+          
+            
+          }
+
+    }
+}
+
+const eyelashTwo = new EyelashTwo()
 
 // window.addEventListener('click', event =>{
 
