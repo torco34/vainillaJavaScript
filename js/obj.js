@@ -67,7 +67,7 @@ logNaber(){
     		// partHeader.classList.remove('nave')
 
     	}else if(e.target === inicio){
-        partHeader.classList.add('header')
+        // partHeader.classList.add('header')
     	partHeader.classList.remove('nave')
     	}
       })  
@@ -93,17 +93,21 @@ class EyelashTwo {
     addColour(){
      // section the onscroll
      
-    let Location = window.pageYOffset;
-    const nuevo = partHeader
+    let Localizar = window.pageYOffset;
+    const nuevo = header
     console.log(nuevo)
+     console.log( Localizar)
      window.onscroll = ()=>{
-        let displace = window.pageYOffset
-        if(Location < displace ){
-         nuevo.classList.add('nave')
-         console.log(`ensayo ${displace}`)
-        }if(Location === 0){
-            nuevo.classList.add('nave')
-            console.log(`ensayo2 ${location}`)
+        let desplazar = window.pageYOffset
+        console.log( desplazar)
+        if(Localizar < desplazar  ){
+
+        header.style.display = 'none'
+        
+        }else{
+        
+        nuevo.style.display = 'block'
+       
         }
           
           
