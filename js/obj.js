@@ -17,7 +17,7 @@ const partHeader = document.querySelector('#foto_header')
  	constructor(){
      this.eyelash()
      this.logNaber()
-     this.removeNaveWithScroll()
+     // this.removeNaveWithScroll()
      
  	}
  	
@@ -58,30 +58,23 @@ eyelash(){
 
 // section donde pone color a la barra y quita la foto header
 logNaber(){
-	   // const partHeader = document.querySelector('#foto_header')
+
+    
 	
     window.addEventListener('click', (e) =>{
     //logrado no es el mejor reto cambiar el codigo luego
     // mostrar una barra al darle click segun la pestana
     	if( e.target === menu || e.target === sabores || e.target === ingresar){
-    		partHeader.classList.add('nave')
-            // header.style.display = 'block'
-    		// partHeader.classList.remove('nave')
-
+    	  partHeader.classList.add('nave')
+           
     	}else if(e.target === inicio){
-        // partHeader.classList.add('header')
+    
     	partHeader.classList.remove('nave')
+       
     	}
       })  
 	} 
-    removeNaveWithScroll(){
-     let Localizar = window.pageYOffset;
-     window.onscroll = () =>{
-         
-     //preguntar a Esteban el porque
-     // si deja asi no se esconde la section dela li en las pestana
-     }
-    }
+    
  }
 
 
@@ -96,46 +89,46 @@ header.addEventListener('click', () =>{
 // section de la pestana de menu y la parra de navegacion
 
 class EyelashTwo {
-    // agrgar color a la barra
+    //quitar la lista segun la pestana
     constructor(){
-        this.addColour()
+        this.removeNav()
     }
-    addColour(){
-     // section the onscroll
+
+
+    removeNav(){
+     // Quitar la nav de la pestana inicio
      
     let Localizar = window.pageYOffset;
-    // const nuevo = header
-   
-     window.onscroll = ()=>{
+    window.onscroll = ()=>{
+         let desplazar = window.pageYOffset
+         if(Localizar < desplazar){
+            header.style.display = 'none'
+        }else{
+           header.style.display = 'block' 
+        }
+    }
+    //Mantener el nav en las pestanas menu, sabor, ingresar
+
+    window.addEventListener('click', e =>{
+          window.onscroll = ()=>{
         let desplazar = window.pageYOffset
-      
-        if(Localizar < desplazar  ){
+     
+        if(Localizar < desplazar && e.target != menu && e.target != sabor && e.target != ingresar ){
 
         header.style.display = 'none'
-        
-        }else{
-        
-       header.style.display = 'block'
+
+        } else {
+         header.style.display = 'block'
+      
        
         }
-          
-          
-            
-          }
+             
+     }
+    })
+   
+ }
 
-    }
 }
 
 const eyelashTwo = new EyelashTwo()
 
-// window.addEventListener('click', event =>{
-
- 		// 	 const encabezado = document.querySelector('#foto_header')
-   //           if(encabezado.classList.toggle('nav') && event.target != encabezado){
-   //            encabezado.classList.toggle('header')
-   //           }
- 	         
- 	 //     console.log(encabezado.classList.toggle('nav'))
- 	 //     // console.log(encabezado.classList.toggle('header'))
- 			
- 		// })
