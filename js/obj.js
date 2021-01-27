@@ -13,6 +13,7 @@ const taps3 = document.getElementById('taps3')
 const taps4 = document.getElementById('taps4')
  
 const partHeader = document.querySelector('#foto_header')
+
  class MostrarPestana{
  	constructor(){
      this.eyelash()

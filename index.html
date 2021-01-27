@@ -5,92 +5,159 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
- <link rel="stylesheet" href="icon/style.css">
+	<link rel="stylesheet" href="icon/style.css">
 	<title>juego</title>
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+	<!-- SECTION DEL JADER -->
 	<header id="foto_header" class=" container header">
 		<nav id="header" class="container nav">
 			<ul class="active" id="">
-				<li class="active" id="inicio" data-body="#taps1">inicio</li>
-				<li id="menu" data-body="#taps2">Menu</li>
-				<li id="sabor" data-body="#taps3">Sabores</li>
-				<li id="ingresar" data-body="#taps4">Ingresa</li>
+				<li class="active" id="inicio" data-body="#taps1">Oferta</li>
+				<li id="menu" data-body="#taps2">Armar</li>
+				<li id="sabor" data-body="#taps3">Pizza</li>
+				<li id="ingresar" data-body="#taps4">Bebidas</li>
 			</ul>
 		</nav>
 	</header>
-<!-- donde va el buscador -->
-	<div class="buscardor" id="lupa">
-		<h2>
-			<input type="search">
-			<label for="">BUSCAR</label>
-		</h2>
+	<!-- TERMINA EL HEADER -->
+
+	<!-- DONDE VA EL BUSCADO -->
+	<section>
+		<div class="buscardor" id="lupa">
+			<h2>
+				<input type="search">
+				<label for="">BUSCAR</label>
+			</h2>
+		</div>
+	</section>
+	<!-- DONDE VA EL BUSCADO -->
+
+	<!-- SECTION DONDE VAL EL PRIMER TAP -->
+	<section class="container">
+		<div class="" id="taps1">
+
+			<div class="container_foto taps1">
+				<div class="Fotos_prom">
+					<figure class="img">
+						<img src="img/img.jpeg" alt="">
+					</figure>
+					<div class="text_h2_p">
+						<p>NUEVA SABOR</p>
+						<h2>VUCANA</h2>
+					</div>
+
+					<p class="text_p">Quiero una</p>
+
+				</div>
+				<!-- cuadro 2 -->
+
+
+				<div class="Fotos_prom">
+
+					<div class="formulario_regitrado">
+
+						<div class="cuerpo_input">
+							<h2>FUSUARIOS REGISTRADOS</h2>
+							<form action="">
+							<input type="email"  id="" placeholder="Tu emeil">
+							<input type="email" id="exampleFormControlInput1" placeholder="Tu contrasena">
+							</form>
+						</div>
+
+						<div class="input_condiciones"> 
+							<form action="">
+							<input type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+							<label class="form-check-label" for="flexRadioDefault2">
+								Recordarme
+							</label><a href=""> ¿Olvidaste tus datos?</a></form>
+							<div class="boton_entrar">
+							<button>ENTRAR</button>
+							</div>
+						</div>
+
+					</div>
+
+					<div>
+						<h2>¿NO ESTAS REGISTRADO?</h2>
+						<a href="">Registrarme</a>
+					</div>
+					<div class="boton_sin_registrar">
+					<button>PEDIDOS SIN REGISTRAR</button>
+                    </div>
+				</div>
+            
+			</div>
+			<div class="container_img">
+             <div class="imagen_prom">
+            		<img src="img/vegeta1.jpg" alt="">
+            		<p>Menú Infantil
+Tu menú infantil esta delicioso, ¡Pídelo ya!</p>
+            	</div>  
+            	<div class="imagen_prom">
+            	<img src="img/vege.jpeg" alt="">
+            	<h2>Pide una deliciosa lasagna</h2><br>
+<p>¿Ya probaste nuestras lasagnas?</p>	
+            	</div>  
+            	<div class="imagen_prom">
+            		<img src="img/veta.jpg" alt="">
+            		<p>DESCUBRE NUESTRAS
+PROMOCIONES</p>
+            	</div>  
+            	</div>
+		</section>
+
+<!-- TERMINA LA SECTION DONDE VAL EL PRIMER TAP -->
+<section class="container  " >
+
+<div class="taps2 " id="taps2">
+	<div class="cuadro">
+		<div class="h1">
+			<h1>Mi pedido</h1>
+		</div>
+		<div class="image">
+		<figure>
+		<h1>El sabor que escojiste</h1>
+		<img src="img/vege.jpeg"  >
+		<p>vegetariana</p>
+		</figure>
+		</div>
+		<div class="boton_tap2">
+			<button>Compar</button>
+		</div>
 	</div>
 
-	<section class="container">
-		<div class="taps1" id="taps1">
-
-            <div class="tap1">
-				<a href="" class="cuadro_imagen1">
-					<figure class="img">
-						<img src="img/img.jpg" alt="">
-					</figure>
-				</a>
-
-				<a href="" class="cuadro_imagen1">
-					<figure class="img">
-						<img src="img/p.jpg" alt="">
-					</figure>
-				</a>
-
-
-				<a href="" class="cuadro_imagen1">
-					<h2>Escoje el ingrediente</h2>
-					<p>Arma tu pizza con los sabores tu escojas
-					y los precios que deseas</p>
-					<br> <br><br>
-					<button class="boton">Ver</button>
-				</a>
-			</div>
-			</div>
-		</section>
-<section class=" container " >
-	<div class="taps2" id="taps2">
-
-		<div class="container_fotosJs" id="container_fotosJs">
-
-
-		<div class="contanedor_botones" id="contanedor_botones">
-			<br> -->
+	<div class="cuadro2">
 	<form action="">
-     <label for="">Vegetales:</label>
-	 <select class="viaje" id="" name="viaje">
-      <option value="0">Cebolla
-      <option value="1">Pimento     
-      <option value="2">Maiz
-      <option value="2">Acetunas
-      <option value="2">champino
+	<label for="">Vegetales</label><br><br>
+    <input type="checkbox" name="peliculas"> Calabaza<br>
+     <input type="checkbox" name="peliculas"> Cebolla<br>
+      <input type="checkbox" name="peliculas"> Pimento<br>     
+      <input type="checkbox" name="peliculas"> Maiz<br>
+      <input type="checkbox" name="peliculas"> Aceptunas<br>
+      <input type="checkbox" name="peliculas"> champinon<br>
     </select>
 	</form>
 
-
 <form action="">
-<label for="">Carnes:</label>
-	 <select class="viaje" id="" name="viaje">
+<label for="">Carnes</label><br><br>
+	
 
-      <option value="0">Carne molida
-      <option value="1">Pollo    
-      <option value="2">Cabana
-      <option value="2">Salchichas
-      <option value="2">Jamon
+	 <input type="checkbox" name="peliculas"> Carne molida<br>
+     <input type="checkbox" name="peliculas"> Pollo <br>
+      <input type="checkbox" name="peliculas"> Cabana<br>     
+      <input type="checkbox" name="peliculas"> Maiz<br>
+      <input type="checkbox" name="peliculas">Salchichas<br>
+      <input type="checkbox" name="peliculas"> Jamon<br>
+      
     </select>
 	</form>
 
-
-<form action="">
-<label for="">Tamano:</label>
+	<div class="botones">
+		<form action="">
+<label for="">Tamano</label><br>
 	 <select class="viaje" id="" name="viaje">
       <option value="0">Personal
       <option value="1">Pequena   
@@ -98,66 +165,52 @@
       <option value="2">grande
       <option value="2">extragrande
     </select>
-</form>
+</form><br>
+<label for="">Porciones</label><br/>
+	 <select class="viaje" id="" name="viaje">
+      <option value="0">4:Porcion
+      <option value="1">6:Porcion 
+      <option value="2">8:Porcion
+      <option value="2">10:Porcion
+    </select>
+	</form>
+<form action=""><br/>
 
+	<label for="">Queso</label><br/>
+	 <select class="viaje" id="" name="viaje">
+      <option value="0">400 gr
+      <option value="1">
+      <option value="2">8:Porcion
+      <option value="2">10:Porcion
+    </select>
+	</form>
+<form action=""><br/>
+
+
+<label for="">Adicionales $ 2000</label><br>
+	 <select class="viaje" id="" name="viaje">
+	 <option value="0">
+      <option value="1">Cebollo
+      <option value="2">Tomate
+      <option value="3">Pimento
+      <option value="4">Maiz
+      <option value="5">Aceptunas
+      <option value="6">champino
+      <option value="7">Carne molida
+      <option value="8">Pollo    
+      <option value="9">Cabana
+      <option value="10">Salchichas
+      <option value="11">Jamon
+       <option value="11">Queso
+    </select>
+	</form><br>
 <form action="">
-<label for="">Adicionales:</label>
-	 <select class="viaje" id="" name="viaje">
-      <option value="0">Personal
-      <option value="1">Pequena   
-      <option value="2">mediana
-      <option value="2">grande
-      <option value="2">extragrande
-    </select>
-	</form>
-
-	<form action="">
-<label for="">Porciones:</label>
-	 <select class="viaje" id="" name="viaje">
-      <option value="0">Personal
-      <option value="1">Pequena   
-      <option value="2">mediana
-      <option value="2">grande
-      <option value="2">extragrande
-    </select>
-	</form>
-	<button class="button">saber precio</button>
-		</div>
-
-
-		<div class="contenedo_cuadro" id="contenedo_cuadro">
-			<h1>Escoje los sabores</h1>
-			<figure>
-				<img src="img/vege.jpeg" class="vegeta" >
-				<img src="img/vegeta1.jpg" class="vegeta1" width="100%" >
-				<!-- <img src="img/champinon.jpeg" class="pin" > -->
-				<!-- <img src="img/champinon.jpeg" class="pin" ><br> -->
-				<!-- <img src="img/champinon.jpeg" class="pin" > -->
-				<!-- <img src="img/champinon.jpeg" class="pin" > -->
-				<!-- <img src="img/champinon.jpeg" class="pin" > -->
-				
-			</figure>
-			<figure>
-				<!-- <img src="img/to.jpeg" class="tomate" > -->
-				<!-- <img src="img/to.jpeg" class="tomate" > -->
-				<!-- <img src="img/to.jpeg" class="tomate" > -->
-             </figure>
-             <figure>
-				<!-- <img src="img/pim.jpeg" class="pim" > -->
-				<!-- <img src="img/pim.jpeg" class="pim" > -->
-				<!-- <img src="img/pim.jpeg" class="pim" > -->
-             </figure>
-		</div>
-
-
-		<div class="contenedor_masa" id="contenedor_masa">
-			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed dignissimos quam fuga repellat saepe odit, quas libero facilis, facere corporis, veniam laudantium quaerat neque eveniet optio! Dignissimos dolores aperiam adipisci!</p>
-		</div>
-
-
+    
+  <button >ver pizza</button> 
 	</div>
 </div>
 </section>
+
 
 
 
@@ -184,8 +237,9 @@ space-evenly: para distribuir los elementos con un espacio proporcional e igual 
 space-around: similar a space-evenly pero tanto en el primero como en el último elemento, el espacio hacia los extremos es la mitad del espacio usado entre los
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex veritatis, debitis odio quam sequi velit libero eum harum laborum illo officia, dignissimos aut officiis quasi, veniam? Reiciendis quod tempore blanditiis.
 Unde excepturi veritatis nulla voluptatum, consequatur molestiae, deserunt vel, nisi optio earum, voluptate modi amet atque. Vero minus voluptates totam? Vero illo neque modi, velit quaerat quidem dicta animi molestias.
-	</div>
+</div>
 </section>
+
 	<section class="container">
 		<div class="taps4" id="taps4">
 			<h1>tap 4 </h1>
@@ -200,7 +254,90 @@ Unde excepturi veritatis nulla voluptatum, consequatur molestiae, deserunt vel, 
 			</p>
 		</div>
 	</section><br>
-		<footer class="fooder_contec contenedor " id="contacto">
+
+	<div>
+		<button><span class="icon-facebook-with-circle  social"></span></button>
+	</div>
+
+<section class="container">
+
+<div class="form_registro ">
+				<div class="ventagasDeRegistase">
+					<p>ventaja de</p>
+					<h2>registrase</h2>
+					<hr>
+					<ul class="lista_veneficios">
+						<li>Descuentos y promociones exclusivas</li>
+						<li>Acceso a pedidos favoritos y
+						últimos pedidos</li>
+						<li>Seguimiento online del estado
+						de tu pedido</li>
+						<li>Pago con tarjeta</li>
+					</ul>
+
+
+                    
+</div>
+
+<div class="container_form">
+	
+	<div class="input">
+	<h2>Formulario de registro</h2>
+ <form action="">
+  <input type="email"  id="" placeholder="Tu emeil">
+
+
+  <input type="email" id="exampleFormControlInput1" placeholder="Tu contrasena">
+
+ 
+  <input type="email"  id="exampleFormControlInput1" placeholder="name@example.com">
+
+
+  <input type="email" id="exampleFormControlInput1" placeholder="name@example.com">
+
+</form>
+</div>
+
+
+<div class="input_boton"> 
+	<form action="">
+	<input type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+	<label class="form-check-label" for="flexRadioDefault2">
+  He leído las políticas de uso, así como las políticas de tratamiento de la información y las acepto
+  </label>
+  </form>
+</div>
+
+
+<div class="boton_sublime">
+	<button>Registrase</button><br>
+
+</div>
+<div class="input_condiciones"> 
+	<form action="">
+	<input type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+	<label class="form-check-label" for="flexRadioDefault2">
+  No deseo recibir ofertas vía email
+  </label>
+  </form>
+</div>
+
+
+<div class="input_condiciones">
+	<form action="">
+	<input type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+	<label class="form-check-label" for="flexRadioDefault2">
+  No deseo recibir ofertas vía SMS
+  </label>
+  </form>
+</div>
+
+</div>
+
+</div>
+
+	</section><br><br>
+<footer class="fooder_contec contenedor " id="contacto">
 	
 <div class="social_media">
 	<br><br>			
