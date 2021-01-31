@@ -65,9 +65,10 @@ logNaber(){
     window.addEventListener('click', (e) =>{
     //logrado no es el mejor reto cambiar el codigo luego
     // mostrar una barra al darle click segun la pestana
+
     	if( e.target === menu || e.target === sabores || e.target === ingresar){
     	  partHeader.classList.add('nave')
-           
+           console.log(partHeader)
     	}else if(e.target === inicio){
     
     	partHeader.classList.remove('nave')
