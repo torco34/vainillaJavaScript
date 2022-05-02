@@ -1,521 +1,440 @@
-*{
-	margin:0px;
-	padding: 0px;
+* {
+  margin: 0px;
+  padding: 0px;
 }
 
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #efefef;
+  overflow-x: hidden;
+  font-size: 2rem;
+  font-family: "Oswald", sans-serif;
+  box-sizing: border-box;
+}
 
-
-body{
-	font-family: 'Open Sans', sans-serif;
-	overflow-x: hidden; 
-	
+html {
+  font-size: 62.5%;
 }
 /*section donde va el header*/
-
-
-
-
-.header{
-	height: 30em;
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-image:  url(../img/images.jpeg);
-	 display: grid;
-	justify-content: center;
+.colores {
+  background-color: #f66b0e;
+  background-color: #205375;
+  background-color: #112b3c;
+  background-color: #efefef;
 }
 
+.header {
+  height: 30em;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../img/images.jpeg);
+  display: grid;
+  justify-content: center;
+}
 
-.header nav{
-	position: fixed;
-	z-index: 9999;
-	color:#ffff;
-	width: 100%;
-
-   
-
-
-
+.header nav {
+  position: fixed;
+  z-index: 9999;
+  color: #ffff;
+  height: 6vh;
+  width: 100%;
+  border: #76350d solid 1px;
+  /* background-color: #4b6304; */
+  background-color: #112b3c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .header nav ul {
-	
-	font-family: 'Open Sans', sans-serif;
-	text-decoration: none;
-	list-style: none;
-	display: flex;
-	/*margin:0.5em ;*/
-
-	justify-content: center;
-
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  justify-content: center;
 }
 
 .header nav ul li {
-	
-	font-family: 'Roboto Condensed', sans-serif;
-	font-size: calc(1em + 0.5vw);
-	border-radius: 10%;
-	width: 5rem;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 5vh;
-	margin:  calc(1em + 0.5vw);
-
+  font-family: "Tapestry", cursive;
+  font-size: 2rem;
+  border-radius: 10%;
+  margin-left: 20px;
+  padding: 10px;
 }
 
 .header nav ul li.active {
-	color: #cf5a19;
-	background:  #ffff;
+  color: #f66b0e;
+  /* background: #ffff; */
 }
 
 .header nav ul li:hover {
-	background:  #ffff;
-	color:  #cf5a19;
+  /* background: #ffff; */
+  color: #cf5a19;
 }
 /*termina el css de  header*/
 
-
 /*section donde va el buscador*/
-.buscardor{
-position: relative;
-	text-align: center;
-	top: -250px;
-	width: 100%;
-	height: 50px;
+.buscardor {
+  position: relative;
+  text-align: center;
+  top: -250px;
+  width: 100%;
+  height: 50px;
 }
 
 .buscardor input {
-	font-size: calc(1em + 1vw);
-	width: 50%;
-	height: 50px;
-
+  font-size: calc(1em + 1vw);
+  width: 50%;
+  height: 50px;
 }
 
 .buscardor label {
-
-	height: 60px;
-	width: 50%;
-	padding: 10px;
-	color: #fff;
-	border-radius: 10%;
-	background: #cf5a19;
+  height: 60px;
+  width: 50%;
+  padding: 10px;
+  color: #fff;
+  border-radius: 10%;
+  background: #cf5a19;
 }
 /*termina el css del buscador*/
 
-
 /*donde va el css del carrito compras*/
-.carrito{
-	position: fixed;
-	width: 20%;
-	height: 25vh;
-	z-index: 9999;
-	right: 0px;
-	top:0px;
-	text-align: center;
-	font-size: 12px;
-	color:#000;
-	background:#fff;
-	border: solid 1px #ccc;
+.carrito {
+  position: fixed;
+  width: 20%;
+  height: 25vh;
+  z-index: 9999;
+  right: 0px;
+  top: 0px;
+  text-align: center;
+  font-size: 12px;
+  color: #000;
+  background: #fff;
+  border: solid 1px #ccc;
 
-	box-shadow: 0px 4px 0px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 4px 0px 4px rgba(0, 0, 0, 0.2);
 }
 
-.carrito button{
-	
-	width: 50%;
-	height: 4vh;
-	text-align: center;
-	font-size: 15px;
-	border-radius: 6px;
-	color:#fff;
-	background:#cf5a19;
-    cursor: pointer;
-   outline: none;
-	
+.carrito button {
+  width: 50%;
+  height: 4vh;
+  text-align: center;
+  font-size: 15px;
+  border-radius: 6px;
+  color: #fff;
+  background: #cf5a19;
+  cursor: pointer;
+  outline: none;
 }
 
-.carrito button:hover{
-	background:#4b6304;
-  
-	
+.carrito button:hover {
+  background: #4b6304;
 }
 /*termina el css de carrito de compras*/
 
 /*section donde van las fotos de promocion en tap1*/
-.taps1{
-	/*display : none;*/
-
-	}
+.taps1 {
+  /*display : none;*/
+}
 
 /*primera section fotos y formulario ya registrado*/
 
-.container_foto{
-
-	display: grid;
-	grid-template-columns: 700px 400px ;
-	grid-gap: 15px;
-	justify-content: center;
-
-
+.container_foto {
+  display: grid;
+  grid-template-columns: 700px 400px;
+  grid-gap: 15px;
+  justify-content: center;
 }
-
-
-
 
 .Fotos_prom {
-    position: relative;
-	grid-template-columns: repeat(2, 300px);
-	width: 100%;
-	height: 60vh;
-
-	
-
-	
+  position: relative;
+  grid-template-columns: repeat(2, 300px);
+  width: 100%;
+  height: 60vh;
 }
 
-.Fotos_prom img{
-	
-	width: 100%;
-	height: 60vh;
-
+.Fotos_prom img {
+  width: 100%;
+  height: 60vh;
 }
 
-
-
-.text_h2_p{
-position: absolute;
-top:10px;
-border: solid 1px #fff;
-color:#fff;
-width: 40%;
-transform: translate(40%);
-text-align: center;
-font-weight: bold;
-border-radius: 5px;
-font-size: calc(1vw + 1vh);
+.text_h2_p {
+  position: absolute;
+  top: 10px;
+  border: solid 1px #fff;
+  color: #fff;
+  width: 40%;
+  transform: translate(40%);
+  text-align: center;
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: calc(1vw + 1vh);
 }
 
-.text_p{
-position: absolute;
-top: 260px;
-color:#fff;
-height: 5vh;
-width: 40%;
-text-align: center;
-border-radius: 5px;
-background:#4b6304; 
-transform: translate(50%);
-font-size: calc(1vw + 1vh);
+.text_p {
+  position: absolute;
+  top: 260px;
+  color: #fff;
+  height: 5vh;
+  width: 40%;
+  text-align: center;
+  border-radius: 5px;
+  background: #4b6304;
+  transform: translate(50%);
+  font-size: calc(1vw + 1vh);
 }
 
 /*termina css de la foto*/
 
 /*section de formulario ya registrados */
 
-.Fotos_prom{
-	background: #000;
-	color:#fff;
-
+.Fotos_prom {
+  background: #000;
+  color: #fff;
 }
 
-.cuerpo_input{
-	display: grid;
-	justify-content: center;
-
+.cuerpo_input {
+  display: grid;
+  justify-content: center;
 }
 
-.cuerpo_input input{
-	width: 90%;
-	height: 6vh;
-	margin-top:10px;
-	border-radius: 5px;
-	border:solid 2px #ccc;
-	align-items: center;
-	outline: none;
+.cuerpo_input input {
+  width: 90%;
+  height: 6vh;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: solid 2px #ccc;
+  align-items: center;
+  outline: none;
 }
-.formulario_regitrado{
-	display: grid;
-	justify-content: center;
-	
-}
-
-.boton_entrar button{
-	
- cursor: pointer;
-	width: 90%;
-	height: 6vh;
-	border-radius: 6px;
-	background: #cf5a19;
-	color:#fff;
-	outline: none;
+.formulario_regitrado {
+  display: grid;
+  justify-content: center;
 }
 
-.boton_entrar button:hover{
-	background: #4b6304;
-
+.boton_entrar button {
+  cursor: pointer;
+  width: 90%;
+  height: 6vh;
+  border-radius: 6px;
+  background: #cf5a19;
+  color: #fff;
+  outline: none;
 }
 
-
-
-.boton_sin_registrar button{
-	
-	
-	color:#fff;
-	width: 90%;
-	height: 6vh;
-	border-radius: 6px;
-	background: #cf5a19;
-	 cursor: pointer;
-outline: none;
-
+.boton_entrar button:hover {
+  background: #4b6304;
 }
 
-
-.boton_sin_registrar button:hover{
-	
-   background: #4b6304;
+.boton_sin_registrar button {
+  color: #fff;
+  width: 90%;
+  height: 6vh;
+  border-radius: 6px;
+  background: #cf5a19;
+  cursor: pointer;
+  outline: none;
 }
 
-
+.boton_sin_registrar button:hover {
+  background: #4b6304;
+}
 
 /*termino css de formulario ya registrado */
 
-
-
 /*section de la segunda fila de fotos */
 
-.container_img{
-
+.container_img {
   display: grid;
   grid-template-columns: repeat(3, 300px);
   grid-gap: 25px;
   justify-content: center;
   margin-top: 20px;
   height: 70vh;
-	
 }
 
 .imagen_prom {
-border-radius: 5px;
-padding: 10px;
-height: 55vh;
-width: 100%;
-
+  border-radius: 5px;
+  padding: 10px;
+  height: 55vh;
+  width: 100%;
 }
 
-.imagen_prom:hover{
- cursor: pointer;
-background:#cccc; 
-
+.imagen_prom:hover {
+  cursor: pointer;
+  background: #cccc;
 }
 
-.imagen_prom img{
-
-	height: 30vh;
-	width: 100%;
-	border-radius: 5px;
-
+.imagen_prom img {
+  height: 30vh;
+  width: 100%;
+  border-radius: 5px;
 }
-
 
 .cuadro_imagen1 h2 {
-	position: relative;
-	font-size: calc(0.5em + 1vw);
-	color:#000;
-	text-align: center;
-	
+  position: relative;
+  font-size: calc(0.5em + 1vw);
+  color: #000;
+  text-align: center;
 }
 .cuadro_imagen1 p {
-	font-size: calc(0.5em + 1vw);
-	color:#000;
-	text-align: center;
-	
+  font-size: calc(0.5em + 1vw);
+  color: #000;
+  text-align: center;
 }
 .cuadro_imagen1 p {
-	font-size: calc(0.5em + 1vw);
-	color:#000;
-	text-align: center;
-	
+  font-size: calc(0.5em + 1vw);
+  color: #000;
+  text-align: center;
 }
 
-.cuadro_imagen1 img{
-	border-radius: 5px;
-	width:100%;
-	height: calc(15vw + 5rem);
+.cuadro_imagen1 img {
+  border-radius: 5px;
+  width: 100%;
+  height: calc(15vw + 5rem);
 }
 
-.boton:hover{
-	 cursor: pointer;
-	background: #4b6304;
-
+.boton:hover {
+  cursor: pointer;
+  background: #4b6304;
 }
 
 /*termino css de la segunda fila de foto*/
 /*section donde termina las fotos de promocion en el tap1*/
 
-
-
 /*section de los botones que sube y bajan*/
 
-.boton_subir{
-	position: fixed;
-	top: 600px;
-	z-index: 9999;
-	background: #fff;
-	border: solid 3px #4b6304;
-	color: #000;
-	height: 6vh;
-	width: 5%;
-	margin:10px;
-	right: 0px;
-	font-size: 25px;
-	outline: none;
+.boton_subir {
+  position: fixed;
+  top: 600px;
+  z-index: 9999;
+  background: #fff;
+  border: solid 3px #4b6304;
+  color: #000;
+  height: 6vh;
+  width: 5%;
+  margin: 10px;
+  right: 0px;
+  font-size: 25px;
+  outline: none;
 }
 
-.boton_subir:hover{
-	border: solid 2px #cf5a19;
-	color:#fff;
-	background:#cf5a19;
+.boton_subir:hover {
+  border: solid 2px #cf5a19;
+  color: #fff;
+  background: #cf5a19;
 }
 /*termina el css de boton de subir*/
 
 /*section del formulaio de inscribirse*/
-.form_registro{
-	display: grid;
-	grid-template-columns: repeat(2, 450px);
-	justify-content: center;
-	grid-gap: 35px;
-	height: 80vh;
-	 border-radius: 5px;
-	/*background: #cf5a19;*/
-	 background: #76350d;
-  
-
+.form_registro {
+  display: grid;
+  grid-template-columns: repeat(2, 450px);
+  justify-content: center;
+  grid-gap: 35px;
+  height: 80vh;
+  border-radius: 5px;
+  /*background: #cf5a19;*/
+  background: #76350d;
 }
 
-.ventagasDeRegistase{
-	padding: 30px;
-	color: #fff;
-
+.ventagasDeRegistase {
+  padding: 30px;
+  color: #fff;
 }
 
-.lista_veneficios li{
-	position: relative;
-    display: grid;
-    list-style: none;
-    text-decoration: none;
-    width:100%;
-    height: 3rem;
-    padding: 4%;
-    margin: 4%;
-	border-bottom: 1px solid #B6B6B6;
+.lista_veneficios li {
+  position: relative;
+  display: grid;
+  list-style: none;
+  text-decoration: none;
+  width: 100%;
+  height: 3rem;
+  padding: 4%;
+  margin: 4%;
+  border-bottom: 1px solid #b6b6b6;
 }
 .container_form {
-  
-    border-radius: 5px;
-    margin:10px;
-    color: #fff;
-    background: #000;
-    width: 90%;
-    height: 70vh;
-    padding: 20px;
-
-
-
+  border-radius: 5px;
+  margin: 10px;
+  color: #fff;
+  background: #000;
+  width: 90%;
+  height: 70vh;
+  padding: 20px;
 }
-.container_form .input h2{
-text-align: center;
-
+.container_form .input h2 {
+  text-align: center;
 }
-.container_form .input input{
+.container_form .input input {
   width: 100%;
   height: 6vh;
-  margin-top:10px;
+  margin-top: 10px;
   border-radius: 5px;
-  border:solid 2px #ccc;
-outline: none;
-    
-
+  border: solid 2px #ccc;
+  outline: none;
 }
-.container_form .input_boton{
-
-  margin-top:20px; 
-
+.container_form .input_boton {
+  margin-top: 20px;
 }
 
 .boton_sublime button {
-
-	margin-top:10px; 
-	width: 100%;
-	height: 6vh;
-	border-radius: 6px;
-	background: #cf5a19;
-	color:#fff;
-	outline: none;
+  margin-top: 10px;
+  width: 100%;
+  height: 6vh;
+  border-radius: 6px;
+  background: #cf5a19;
+  color: #fff;
+  outline: none;
 }
-
 
 .boton_sublime button:hover {
-background: #4b6304;
- 
+  background: #4b6304;
 }
-.input_condiciones{
-	margin-top: 10px;
+.input_condiciones {
+  margin-top: 10px;
 }
 /*termina css de formulario de escribirse*/
 
-
-
 /*Parte pestana */
 
-.taps3{
-	display : none;
-	background-color: #8b4a00;
+.taps3 {
+  display: none;
+  background-color: #8b4a00;
 }
 /*/*Parte pestana 4*/
 
-.taps4{
-	display : none;
-	background-color:#370603;
+.taps4 {
+  display: none;
+  background-color: #370603;
 }
- 
-
 
 /*Parte donde va foter*/
 
-
-.social_media a{
- text-decoration: none;
- list-style: none;
+.social_media a {
+  text-decoration: none;
+  list-style: none;
 }
 
-
-.social_media{
-margin: auto;
+.social_media {
+  margin: auto;
 }
-
 
 .social_media a span {
- color:#fff;
- font-size: 3em;
- margin: 5px;
-
+  color: #fff;
+  font-size: 3em;
+  margin: 5px;
 }
-
-
 
 .fooder_contec {
-     display: grid;
-	grid-template-columns: repeat(3, minmax(100px, 293px));
-	justify-content: center;
-	padding:10px;
-	grid-gap: 28px;
-	color:#fff;
-	background:  #000;
-
+  display: grid;
+  grid-template-columns: repeat(3, minmax(100px, 293px));
+  justify-content: center;
+  padding: 10px;
+  grid-gap: 28px;
+  color: #fff;
+  background: #000;
 }
-
 
 /* termina parte donde va el footer */
