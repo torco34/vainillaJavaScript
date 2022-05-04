@@ -1,8 +1,6 @@
-* {
-  margin: 0px;
-  padding: 0px;
+html {
+  font-size: 62.5%;
 }
-
 body {
   font-family: "Open Sans", sans-serif;
   background-color: #efefef;
@@ -10,30 +8,11 @@ body {
   font-size: 2rem;
   font-family: "Oswald", sans-serif;
   box-sizing: border-box;
+  color: ;
 }
-
-html {
-  font-size: 62.5%;
+.espacio-sectiones {
+  height: 1rem;
 }
-/*section donde va el header*/
-.colores {
-  background-color: #f66b0e;
-  background-color: #205375;
-  background-color: #112b3c;
-  background-color: #efefef;
-}
-
-.header {
-  height: 30em;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url(../img/images.jpeg);
-  display: grid;
-  justify-content: center;
-}
-
 .header nav {
   position: fixed;
   z-index: 9999;
@@ -47,394 +26,302 @@ html {
   justify-content: center;
   align-items: center;
 }
-
 .header nav ul {
   text-decoration: none;
   list-style: none;
   display: flex;
   justify-content: center;
 }
-
 .header nav ul li {
   font-family: "Tapestry", cursive;
   font-size: 2rem;
   border-radius: 10%;
-  margin-left: 20px;
-  padding: 10px;
+  margin-left: 10px;
+  padding: 6px;
 }
-
 .header nav ul li.active {
   color: #f66b0e;
-  /* background: #ffff; */
 }
-
 .header nav ul li:hover {
-  /* background: #ffff; */
   color: #cf5a19;
 }
-/*termina el css de  header*/
 
-/*section donde va el buscador*/
-.buscardor {
-  position: relative;
-  text-align: center;
-  top: -250px;
-  width: 100%;
-  height: 50px;
-}
-
-.buscardor input {
-  font-size: calc(1em + 1vw);
-  width: 50%;
-  height: 50px;
-}
-
-.buscardor label {
-  height: 60px;
-  width: 50%;
-  padding: 10px;
-  color: #fff;
-  border-radius: 10%;
-  background: #cf5a19;
-}
-/*termina el css del buscador*/
-
-/*donde va el css del carrito compras*/
-.carrito {
-  position: fixed;
-  width: 20%;
-  height: 25vh;
-  z-index: 9999;
-  right: 0px;
-  top: 0px;
-  text-align: center;
-  font-size: 12px;
-  color: #000;
-  background: #fff;
-  border: solid 1px #ccc;
-
-  box-shadow: 0px 4px 0px 4px rgba(0, 0, 0, 0.2);
-}
-
-.carrito button {
-  width: 50%;
-  height: 4vh;
-  text-align: center;
-  font-size: 15px;
-  border-radius: 6px;
-  color: #fff;
-  background: #cf5a19;
-  cursor: pointer;
-  outline: none;
-}
-
-.carrito button:hover {
-  background: #4b6304;
-}
-/*termina el css de carrito de compras*/
-
-/*section donde van las fotos de promocion en tap1*/
-.taps1 {
-  /*display : none;*/
-}
-
-/*primera section fotos y formulario ya registrado*/
-
-.container_foto {
+/* SECTION IMG FONDO */
+.img-fondo {
+  height: 70vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../img/header.jpg);
   display: grid;
-  grid-template-columns: 700px 400px;
-  grid-gap: 15px;
-  justify-content: center;
+  object-fit: cover;
 }
+.hover h1 {
+  color: #efefef;
+  text-shadow: 1px 1px 1px #205375;
+  font-size: 3rem;
+  text-transform: uppercase;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.hover h1:hover {
+  transform: scale(1.1);
+  transition: calc(1s);
+  color: #cf5a19;
+}
+.seccion .hover {
+  width: 100%;
+  height: 70vh;
+  background-color: rgb(56, 53, 53, 0.569);
+  position: absolute;
+  top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  object-fit: cover;
+}
+/* SECTIO DE LOS TAP*/
+.taps1 {
+  /* display: none; */
+}
+
+.taps3 {
+  display: none;
+}
+
+/* section taps1 */
 
 .Fotos_prom {
   position: relative;
-  grid-template-columns: repeat(2, 300px);
-  width: 100%;
-  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
 }
-
 .Fotos_prom img {
   width: 100%;
   height: 60vh;
+  opacity: 0.9;
 }
 
 .text_h2_p {
   position: absolute;
   top: 10px;
-  border: solid 1px #fff;
-  color: #fff;
-  width: 40%;
-  transform: translate(40%);
+  color: #efefef;
+  width: 50%;
+  background-color: rgb(56, 53, 53, 0.569);
+  box-sizing: border-box;
   text-align: center;
   font-weight: bold;
   border-radius: 5px;
-  font-size: calc(1vw + 1vh);
+  font-size: 5rem;
+  transform: translateZ(8px) scale(0.375);
+  transform-origin: 50%;
+  cursor: pointer;
 }
 
 .text_p {
   position: absolute;
   top: 260px;
-  color: #fff;
+  color: #f66b0e;
   height: 5vh;
   width: 40%;
   text-align: center;
   border-radius: 5px;
-  background: #4b6304;
-  transform: translate(50%);
-  font-size: calc(1vw + 1vh);
+  font-weight: bold;
+  background-color: #efefef;
+  transform: translate(20%);
+  font-size: 3rem;
+}
+.text_h2_p:hover {
+  transform: translateX(100px);
+}
+.informacion {
+  height: 60vh;
+  background-color: #112b3c;
+  color: #efefef;
+  padding: 22px;
+  border: #76350d solid 1px;
+}
+.informacion h1 {
+  text-align: center;
+  font-weight: bold;
+}
+.informacion h2 {
+  margin: 2rem;
 }
 
-/*termina css de la foto*/
+/* container taps2*/
 
-/*section de formulario ya registrados */
-
-.Fotos_prom {
-  background: #000;
-  color: #fff;
-}
-
-.cuerpo_input {
-  display: grid;
+.containeCompraPizza {
+  display: flex;
   justify-content: center;
-}
-
-.cuerpo_input input {
-  width: 90%;
-  height: 6vh;
-  margin-top: 10px;
-  border-radius: 5px;
-  border: solid 2px #ccc;
   align-items: center;
-  outline: none;
+  background-color: #112b3c;
+  margin-top: 3.5rem;
+  box-sizing: border-box;
 }
-.formulario_regitrado {
-  display: grid;
-  justify-content: center;
-}
-
-.boton_entrar button {
-  cursor: pointer;
-  width: 90%;
-  height: 6vh;
-  border-radius: 6px;
-  background: #cf5a19;
-  color: #fff;
-  outline: none;
-}
-
-.boton_entrar button:hover {
-  background: #4b6304;
-}
-
-.boton_sin_registrar button {
-  color: #fff;
-  width: 90%;
-  height: 6vh;
-  border-radius: 6px;
-  background: #cf5a19;
-  cursor: pointer;
-  outline: none;
-}
-
-.boton_sin_registrar button:hover {
-  background: #4b6304;
-}
-
-/*termino css de formulario ya registrado */
-
-/*section de la segunda fila de fotos */
-
-.container_img {
-  display: grid;
-  grid-template-columns: repeat(3, 300px);
-  grid-gap: 25px;
-  justify-content: center;
-  margin-top: 20px;
-  height: 70vh;
-}
-
-.imagen_prom {
-  border-radius: 5px;
-  padding: 10px;
-  height: 55vh;
+.containeCompraPizza img {
   width: 100%;
+  height: 40vh;
+  overflow: hidden;
+  object-fit: cover;
+  border-radius: 6px;
 }
-
-.imagen_prom:hover {
-  cursor: pointer;
-  background: #cccc;
-}
-
-.imagen_prom img {
-  height: 30vh;
+/* hover de imagen */
+.box {
   width: 100%;
-  border-radius: 5px;
-}
-
-.cuadro_imagen1 h2 {
+  height: 40vh;
+  text-align: center;
+  overflow: hidden;
   position: relative;
-  font-size: calc(0.5em + 1vw);
-  color: #000;
-  text-align: center;
-}
-.cuadro_imagen1 p {
-  font-size: calc(0.5em + 1vw);
-  color: #000;
-  text-align: center;
-}
-.cuadro_imagen1 p {
-  font-size: calc(0.5em + 1vw);
-  color: #000;
-  text-align: center;
+  margin: 1.3%;
 }
 
-.cuadro_imagen1 img {
-  border-radius: 5px;
+.box img {
   width: 100%;
-  height: calc(15vw + 5rem);
+  height: 100%;
+  object-fit: cover;
 }
-
-.boton:hover {
-  cursor: pointer;
-  background: #4b6304;
-}
-
-/*termino css de la segunda fila de foto*/
-/*section donde termina las fotos de promocion en el tap1*/
-
-/*section de los botones que sube y bajan*/
-
-.boton_subir {
-  position: fixed;
-  top: 600px;
-  z-index: 9999;
-  background: #fff;
-  border: solid 3px #4b6304;
-  color: #000;
-  height: 6vh;
-  width: 5%;
-  margin: 10px;
-  right: 0px;
-  font-size: 25px;
-  outline: none;
-}
-
-.boton_subir:hover {
-  border: solid 2px #cf5a19;
-  color: #fff;
-  background: #cf5a19;
-}
-/*termina el css de boton de subir*/
-
-/*section del formulaio de inscribirse*/
-.form_registro {
-  display: grid;
-  grid-template-columns: repeat(2, 450px);
+.box .hover {
+  width: 0%;
+  height: 50vh;
+  background-color: rgb(56, 53, 53, 0.568);
+  position: absolute;
+  top: 0px;
+  display: flex;
   justify-content: center;
-  grid-gap: 35px;
-  height: 80vh;
-  border-radius: 5px;
-  /*background: #cf5a19;*/
-  background: #76350d;
+  align-items: center;
+  overflow: hidden;
+  transition: 0.4s all;
 }
 
-.ventagasDeRegistase {
-  padding: 30px;
-  color: #fff;
+.hover h1 {
+  color: rgb(217, 198, 235);
+  text-shadow: 1px 1px 1px black;
+  font-size: 2rem;
+  text-transform: uppercase;
 }
-
-.lista_veneficios li {
-  position: relative;
-  display: grid;
-  list-style: none;
-  text-decoration: none;
+.box:hover .hover {
   width: 100%;
-  height: 3rem;
-  padding: 4%;
-  margin: 4%;
-  border-bottom: 1px solid #b6b6b6;
 }
-.container_form {
-  border-radius: 5px;
-  margin: 10px;
-  color: #fff;
-  background: #000;
-  width: 90%;
-  height: 70vh;
-  padding: 20px;
+/* setion del tap3 */
+
+.imagen-continer3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #112b3c;
+  border: #0f0e0e solid 3px;
+  color: aliceblue;
+  margin-top: 3.5rem;
 }
-.container_form .input h2 {
+.imagen-continer3 div {
+  border: solid 1px #205375;
   text-align: center;
+  display: block;
+  justify-content: space-around;
+  padding: 2rem;
+  margin: 2rem;
+  align-items: center;
+  box-shadow: 2px 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
-.container_form .input input {
+.imagen-continer3 img {
   width: 100%;
-  height: 6vh;
-  margin-top: 10px;
-  border-radius: 5px;
-  border: solid 2px #ccc;
-  outline: none;
-}
-.container_form .input_boton {
-  margin-top: 20px;
+  height: 25vh;
+  object-fit: cover;
+  border-radius: 2%;
 }
 
-.boton_sublime button {
-  margin-top: 10px;
-  width: 100%;
+.imagen-continer3 button {
+  cursor: pointer;
+  width: 90%;
   height: 6vh;
   border-radius: 6px;
   background: #cf5a19;
   color: #fff;
   outline: none;
 }
-
-.boton_sublime button:hover {
-  background: #4b6304;
+.imagen-continer3 button:hover {
+  background: #205375;
 }
-.input_condiciones {
-  margin-top: 10px;
+.imagen-continer3 div:hover {
+  border: solid 1px #9cc3dd;
 }
-/*termina css de formulario de escribirse*/
+/*  */
 
-/*Parte pestana */
+/* FUTER */
 
-.taps3 {
-  display: none;
-  background-color: #8b4a00;
+.fooder_contec {
+  color: #fff;
+  background-color: #383838;
+  display: flex;
+  padding: 2rem;
+  justify-content: space-around;
+  align-items: center;
 }
-/*/*Parte pestana 4*/
-
-.taps4 {
-  display: none;
-  background-color: #370603;
-}
-
-/*Parte donde va foter*/
-
-.social_media a {
-  text-decoration: none;
-  list-style: none;
-}
-
-.social_media {
-  margin: auto;
-}
-
 .social_media a span {
   color: #fff;
   font-size: 3em;
   margin: 5px;
 }
-
-.fooder_contec {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(100px, 293px));
+.social_media {
+  margin: auto;
+  height: 20vh;
+  display: flex;
   justify-content: center;
-  padding: 10px;
-  grid-gap: 28px;
-  color: #fff;
-  background: #000;
+  align-items: center;
+}
+.social_media a {
+  text-decoration: none;
+  list-style: none;
+}
+/* SECTION DONDE VA LA BEBIDA */
+.container-bebida {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #112b3c;
+  border: #0f0e0e solid 3px;
+  color: aliceblue;
+  margin-top: 3.5rem;
 }
 
-/* termina parte donde va el footer */
+.container-bebida div {
+  border: solid 1px #205375;
+  text-align: center;
+  display: block;
+  justify-content: space-around;
+  padding: 2rem;
+  margin: 2rem;
+  border-radius: 1%;
+  align-items: center;
+  cursor: pointer;
+
+  box-shadow: 2px 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.container-bebida img {
+  width: 100%;
+  height: 25vh;
+  object-fit: cover;
+  border-radius: 2%;
+}
+.container-bebida button {
+  cursor: pointer;
+  width: 90%;
+  height: 6vh;
+  border-radius: 6px;
+  background: #cf5a19;
+  color: #fff;
+  outline: none;
+}
+.container-bebida button:hover {
+  background: #205375;
+}
+.container-bebida div:hover {
+  border: solid 1px #9cc3dd;
+}
